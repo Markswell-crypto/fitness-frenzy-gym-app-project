@@ -1,12 +1,17 @@
-import React from "react"
+
+import NavBar from './components/NavBar';
+import SearchBar from './components/SearchBar'
+import './App.css' 
+
 
 function App() {
-
   return (
-      <div>
-        
-      </div>
-  )
+    <div className="App">
+
+<h1>FITNESS FRENZY GYM</h1>
+      <NavBar />
+    </div>
+  );
 }
 
-export default App
+export default App;
