@@ -5,9 +5,9 @@
       "name": "Push-up",
       "image": "public/exercisesimages/pushup.jpg",
       "description": "A classic bodyweight exercise for strengthening the upper body and core. The push-up involves lowering your body to the ground by bending your arms and then pushing it back up using your arms and chest muscles. It's a great exercise for building overall upper body strength and is a staple in many workout routines.",
-      "likes": 3,
+      "likes": 5,
       "dislike": 0,
-      "dislikes": null
+      "dislikes": 3
     },
     {
       "id": 2,
@@ -23,16 +23,18 @@
       "name": "Plank",
       "image": "public/exercisesimages/planks.jpg",
       "description": "The plank is a core-strengthening exercise that improves stability and posture. To do a plank, you hold a push-up position with your arms straight and your body in a straight line, supported by your toes and forearms. This exercise is excellent for developing core strength, which is vital for maintaining good posture and preventing lower back pain.",
-      "likes": 0,
-      "dislike": 0
+      "likes": 3,
+      "dislike": 0,
+      "dislikes": null
     },
     {
       "id": 4,
       "name": "Lunges",
       "image": "public/exercisesimages/lunges.jpg",
       "description": "Lunges are a leg exercise that works on balance and strength. To perform lunges, you step forward with one leg and lower your body until both knees are bent at 90-degree angles. Lunges help to build leg and glute strength, improve balance, and are often used to target specific leg muscles.",
-      "likes": 0,
-      "dislike": 0
+      "likes": 2,
+      "dislike": 0,
+      "dislikes": 1
     },
     {
       "id": 5,
@@ -80,8 +82,9 @@
       "name": "HITT",
       "image": "public/exercisesimages/hitt.jpg",
       "description": "High-Intensity Interval Training to improve fitness and burn fat.",
-      "likes": 0,
-      "dislike": 0
+      "likes": 1,
+      "dislike": 0,
+      "dislikes": null
     },
     {
       "id": 11,
