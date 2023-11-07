@@ -64,12 +64,12 @@ const Comment = ({
               contentEditable={editMode}
               suppressContentEditableWarning={true}
               ref={inputRef}
-              style={{ wordWrap: "break-word" }}
+              className="commentText"
             >
               {input}
             </span>
 
-            <div style={{ display: "flex", marginTop: "5px" }}>
+            <div className="commentActions">
               {editMode ? (
                 <>
                   <Action
@@ -89,19 +89,19 @@ const Comment = ({
               ) : (
                 <>
                   <Action
-                    className="reply"
+                    className="replyButton"
                     type="REPLY"
                     handleClick={handleNewComment}
                   />
                   <Action
-                    className="reply"
+                    className="replyEdit"
                     type="EDIT"
                     handleClick={() => {
                       setEditMode(true);
                     }}
                   />
                   <Action
-                    className="reply"
+                    className="replyDelete"
                     type="DELETE"
                     handleClick={handleDelete}
                   />

@@ -1,7 +1,7 @@
 .commentContainer {
   display: flex;
   background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  border: 1px solid #e92b2b;
   padding: 30px;
   margin: 10px;
   border-radius: 5px;
@@ -40,7 +40,32 @@
   cursor: pointer;
 }
 
-.reply {
+.replyEdit {
   padding: 20px;
-  bottom: 300px;
+  margin-bottom: 40px;
+}
+
+.replyEdit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.replyDelete {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.commentActions{
+  margin-bottom: 30px;
+  bottom: 70px;
 }
