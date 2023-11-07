@@ -1,10 +1,16 @@
-import React from "react"
+import { useState } from "react"
+import Comments from "./components/Comments"
+import "./style.css"
+const comments = {
+  id: 1,
+  items: []
+};
 
-function App() {
-
+function App() { 
+  const [commentsData, setCommentsData] = useState(comments)
   return (
-      <div>
-        
+      <div className="App">
+        < Comment comment={commentsData} />
       </div>
   )
 }
