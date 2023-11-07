@@ -11,6 +11,8 @@ function App() {
   };
 
   return (
+    <div className="Container">
+ <NavBar />
     <div className="App">
  <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
    <div className="Container">
