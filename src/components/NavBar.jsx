@@ -7,9 +7,9 @@ const NavBar = () => {
     
       <ul className="navbar-list">
     <li><a href="/">HOME</a></li>
-    <li><a href="/about">ABOUT</a></li>
-    <li><a href="/exercises">EXERCISES</a></li>
-    <li><a href="/contact">CONTACT</a></li>
+    <li><a href="/about"></a></li>
+    <li><a href="/exercises">EXERCISE ROUTINE</a></li>
+    <li><a href="/contact">ADD EXERCISE FORM</a></li>
     <li><a href="/reviews">REVIEWS</a></li>
   </ul>
 
