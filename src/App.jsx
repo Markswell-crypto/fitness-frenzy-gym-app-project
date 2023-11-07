@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import './App.css';
+import ExerciseDisplay from './components/ExerciseDisplay';
 
 function App() {
   const handleSearch = (searchTerm) => {
@@ -9,11 +10,16 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="Container">
  <h1>FITNESS FRENZY GYM</h1>
-
-      <NavBar />
-      <SearchBar onSearch={handleSearch} />
+<div>
+ <NavBar />
+      <SearchBar onSearch={handleSearch} /> 
+</div>
+      <br></br>
+      <div className='container'>
+       <ExerciseDisplay /> 
+      </div>
       
     </div>
   );
