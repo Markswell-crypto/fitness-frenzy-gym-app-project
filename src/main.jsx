@@ -1,10 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
-import ReviewPage from './component/ReviewPage.jsx'
+import App from './App.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ReviewPage />
+      <Router>
+        <App />
+      </Router>
   </React.StrictMode>,
 )

@@ -1,43 +1,32 @@
-import { useState } from "react";
-import Comment from "./components/Comments";
-import useNode from "./hooks/Node";
-import "./index.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import SearchBar from './components/SearchBar';
+import './App.css';
+import ExerciseDisplay from './components/ExerciseDisplay';
 
-const comments = {
-  id: 1,
-  items: [],
-};
-const App = () => {
-  const [commentsData, setCommentsData] = useState(comments);
-
-  const { insertNode, editNode, deleteNode } = useNode();
-
-  const handleInsertNode = (folderId, item) => {
-    const finalStructure = insertNode(commentsData, folderId, item);
-    setCommentsData(finalStructure);
-  };
-
-  const handleEditNode = (folderId, value) => {
-    const finalStructure = editNode(commentsData, folderId, value);
-    setCommentsData(finalStructure);
-  };
-
-  const handleDeleteNode = (folderId) => {
-    const finalStructure = deleteNode(commentsData, folderId);
-    const temp = { ...finalStructure };
-    setCommentsData(temp);
+function App() {
+  const handleSearch = (searchTerm) => {
+    console.log(`Searching for: ${searchTerm}`);
   };
 
   return (
+    <div className="Container">
+ <NavBar />
     <div className="App">
-      <Comment
-        handleInsertNode={handleInsertNode}
-        handleEditNode={handleEditNode}
-        handleDeleteNode={handleDeleteNode}
-        comment={commentsData}
-      />
+ <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
+   <div className="Container">
+    <br></br>
+    <div className='container'>
+      <NavBar />
+      <SearchBar onSearch={handleSearch} /> 
     </div>
+      <br></br>
+      <div className='container'>
+       <ExerciseDisplay /> 
+      </div>
+      
+  </div>
   );
-};
+}
 
 export default App;
