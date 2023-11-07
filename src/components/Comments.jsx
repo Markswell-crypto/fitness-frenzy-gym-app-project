@@ -51,13 +51,15 @@ const Comment = ({
               onChange={(e) => setInput(e.target.value)}
               placeholder="type..."
             />
-
+            <div>
             <Action
-              className="reply comment"
+              className="reply-comment"
               type="COMMENT"
               handleClick={onAddComment}
             />
+            </div>
           </>
+          
         ) : (
           <>
             <span
@@ -114,18 +116,18 @@ const Comment = ({
 
       <div style={{ display: expand ? "block" : "none", paddingLeft: 25 }}>
         {showInput && (
-          <div className="inputContainer">
+          <div className="childInput">
             <input
               type="text"
               className="inputContainer__input"
-              autoFocus
+             
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="type..."
             />
             <Action className="reply" type="REPLY" handleClick={onAddComment} />
             <Action
-              className="reply"
+              className="replyCancel"
               type="CANCEL"
               handleClick={() => {
                 setShowInput(false);
