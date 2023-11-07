@@ -97,4 +97,25 @@ const handleDelete = () => {
                           <>
                             REPLY
                           </>
-                       
+                        }
+                        handleClick={handleNewComment}
+                      />
+                      <Action
+                        className="reply"
+                        type="EDIT"
+                        handleClick={() => {
+                          setEditMode(true);
+                        }}
+                      />
+                      <Action
+                        className="reply"
+                        type="DELETE"
+                        handleClick={handleDelete}
+                      />
+                    </>
+                  )}
+                </div>
+              </>
+            )}
+          </div>
+    
