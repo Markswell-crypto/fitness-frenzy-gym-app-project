@@ -30,6 +30,15 @@ const Comments = ({
             setShowInput(false);
             setInput("");
         }
+
+
+    if (editMode) setEditMode(false);
+};
+
+const handleDelete = () => {
+  handleDeleteNode(comment.id);
+};
+
     }
   return (
     <div>
