@@ -1,4 +1,5 @@
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import './App.css';
@@ -11,17 +12,21 @@ function App() {
 
   return (
     <div className="Container">
- <h1 className="text-warning">FITNESS FRENZY GYM</h1>
-<div className='container'>
  <NavBar />
+    <div className="App">
+ <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
+   <div className="Container">
+    <br></br>
+    <div className='container'>
+      <NavBar />
       <SearchBar onSearch={handleSearch} /> 
-</div>
+    </div>
       <br></br>
       <div className='container'>
        <ExerciseDisplay /> 
       </div>
       
-    </div>
+  </div>
   );
 }
 
