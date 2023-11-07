@@ -16,24 +16,61 @@ h1{
 }
 .navbar-list {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: flex-start;
-
+  
 }
 
 .navbar-list li {
-  margin-right: 10px; 
-  padding:0px;
-
-  }
+  margin-right: 20px;
+  padding: 0px;
+  bottom:30px
+}
 
 .navbar-list a {
-  color: white;
-  font-size:x-large;
+  color: red;
+  font-size: x-large;
   font-weight: bold;
   margin-right: 100px;
+ 
   
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: block;
+  padding: 10px;
+  background-color:green;
+  color: white;
+  font-weight: bolder;
+font-size:larger;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  color:red;
+}
+
+.dropdown-menu li {
+  margin: 0px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: black;
+  font-size: medium;
+  font-weight: normal;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
   .search-bar {
     display: flex;
     align-items: center;

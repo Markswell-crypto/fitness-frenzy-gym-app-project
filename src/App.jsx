@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
- <h1>FITNESS FRENZY GYM</h1>
+ <h1>FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
 
       <NavBar />
       <SearchBar onSearch={handleSearch} />
