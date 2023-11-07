@@ -40,20 +40,42 @@ const handleDelete = () => {
 };
 
     }
-  return (
-    <div>
+    return (
         <div>
-            <input  
-                type="text"
-                className="form-control"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder="type..."
-            />
-            <div className="reply-btn" onClick={onAddComment}>COMMENT</div>
-        </div>
-    </div>
-  )
-}
-
-export default Comments;
+          <div className={comment.id === 1 ? "inputContainer" : "commentContainer"}>
+            {comment.id === 1 ? (
+              <>
+                <input
+                  type="text"
+                  className="inputContainer__input first_input"
+                  autoFocus
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
+                  placeholder="type..."
+                />
+    
+                <Action
+                  className="reply comment"
+                  type="COMMENT"
+                  handleClick={onAddComment}
+                />
+              </>
+            ) : (
+              <>
+                <span
+                  contentEditable={editMode}
+                  suppressContentEditableWarning={editMode}
+                  ref={inputRef}
+                  style={{ wordWrap: "break-word" }}
+                >
+                  {comment.name}
+                </span>
+    
+                <div style={{ display: "flex", marginTop: "5px" }}>
+                  {editMode ? (
+                    <>
+                      <Action
+                        className="reply"
+                        type="SAVE"
+                        handleClick={onAddComment}
+                      />
