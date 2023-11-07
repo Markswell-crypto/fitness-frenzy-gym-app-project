@@ -29,40 +29,42 @@ h1{
 
 .navbar-list a {
   color: white;
-  font-size: larger;
+  font-size:x-large;
   font-weight: bold;
   margin-right: 100px;
   
 }
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
- 
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 85px;
+    right: 13px;
+  }
   
-}
-
-.search-input {
-  padding: 13px;
-  margin-right: 25px;
-  font-size: 19px;
-  border: 5px solid #0073e6; 
-  border-radius: 5px;
-  width: 300px; 
+  .search-input {
+    padding: 13px;
+    margin-right: 25px;
+    font-size: 19px;
+    border: 5px solid #0073e6;
+    border-radius: 5px;
+    width: 300px;
+    background-color: whitesmoke;
+    color: white;
+    margin-bottom: 10px;
+  }
   
-  background-color: black;
-  color: white;
-}
+  .search-button {
+    padding: 15px 25px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-right: 40px;
 
-.search-button {
-  padding: 12px 15px; 
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 20px; 
-  border-radius: 10px;
-  margin-right: 40px;
- 
-
-}
+   
+  }
+  
