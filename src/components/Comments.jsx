@@ -79,3 +79,22 @@ const handleDelete = () => {
                         type="SAVE"
                         handleClick={onAddComment}
                       />
+                      <Action
+                        className="reply"
+                        type="CANCEL"
+                        handleClick={() => {
+                          if (inputRef.current)
+                            inputRef.current.innerText = comment.name;
+                          setEditMode(false);
+                        }}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <Action
+                        className="reply"
+                        type={
+                          <>
+                            REPLY
+                          </>
+                       
