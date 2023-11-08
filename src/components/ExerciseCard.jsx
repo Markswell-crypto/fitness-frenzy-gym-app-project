@@ -41,12 +41,6 @@ const ExerciseCard = ({ exercise, onLike, onDislike }) => {
           </Link>
         </div>
         <br></br>
-        <div className='container'>
-          <Link to={`/exercise-routine/${exercise.id}`} className='btn btn-info me-2 text-small'>
-            Add Routine
-          </Link>
-        </div>
-        <br></br>
       </div>
     </div>
   );

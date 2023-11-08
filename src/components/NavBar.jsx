@@ -11,10 +11,10 @@ const NavBar = () => {
               <a href="/">HOME 😊</a>
             </li>
             <li>
-              <a href="/exercises_routine">EXERCISES ROUTINE😊</a>
+              <a href="/exercise-daily-routine">EXERCISES ROUTINE😊</a>
             </li>
             <li>
-              <a href="/addexercise_form">ADD EXERCISE FORM 😊</a>
+              <a href="/add-exercise">ADD EXERCISE FORM 😊</a>
             </li>
             <li>
               <a href="/comments">REVIEWS 💙😊</a>

@@ -1,30 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import ExerciseDisplay from './components/ExerciseDisplay';
-import ExerciseDetails from './components/ExerciseDetails'; 
+import ExerciseDetails from './components/ExerciseDetails';
 import ExerciseDailyRoutine from './components/ExerciseDailyRoutine';
-// import ReviewPage from './components/ReviewPage'
+import AddExercise from './components/AddExercise';
+import CommentSection from './components/CommentsSection';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
   const handleSearch = (searchTerm) => {
-    console.log(`Searching for: ${searchTerm}`);
+    setSearchTerm(searchTerm);
   };
 
   return (
     <div className="Container">
       <div className="App">
-        <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
+        <h1 className="text-warning mt-4">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
         <br></br>
         <Router>
           <NavBar />
           <SearchBar onSearch={handleSearch} />
           <Routes>
-            <Route path="/" exact element={<ExerciseDisplay/>} />
+            <Route
+              path="/"
+              element={<ExerciseDisplay searchTerm={searchTerm} />}
+            />
             <Route path="/exercise-details/:id" element={<ExerciseDetails />} />
-            <Route path="/exercises_routine" element={<ExerciseDailyRoutine />} />
-            {/* <Route path="/comments" element={<ReviewPage />} /> */}
+            <Route path="/exercise-daily-routine" element={<ExerciseDailyRoutine />} />
+            <Route path="/add-exercise" element={<AddExercise />} />
+            <Route path="/comments" element={<CommentSection />} />
           </Routes>
         </Router>
       </div>
@@ -33,4 +40,3 @@ function App() {
 }
 
 export default App;
-

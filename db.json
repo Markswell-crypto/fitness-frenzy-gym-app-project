@@ -14,15 +14,17 @@
       "image": "/exercisesimages/squats.jpg",
       "description": "Squats are a lower body exercise that targets the quadriceps, hamstrings, and glutes. When performing squats, you lower your body by bending your knees and hips, as if you were sitting in an imaginary chair, and then return to a standing position. Squats are essential for building leg strength and are a fundamental movement in strength training.",
       "likes": 3,
-      "dislikes": 0
+      "dislikes": 0,
+      "dislike": 2
     },
     {
       "id": 3,
       "name": "Plank",
       "image": "/exercisesimages/planks.jpg",
       "description": "The plank is a core-strengthening exercise that improves stability and posture. To do a plank, you hold a push-up position with your arms straight and your body in a straight line, supported by your toes and forearms. This exercise is excellent for developing core strength, which is vital for maintaining good posture and preventing lower back pain.",
-      "likes": 3,
-      "dislikes": 0
+      "likes": 4,
+      "dislikes": 0,
+      "dislike": 2
     },
     {
       "id": 4,
@@ -53,8 +55,8 @@
       "name": "Sit-ups",
       "image": "/exercisesimages/sit ups.jpg",
       "description": "Sit-ups are an abdominal exercise designed to strengthen the core muscles. You perform sit-ups by lying on your back, bending your knees, and lifting your upper body off the ground toward your thighs. This exercise helps build abdominal strength and is often included in core workouts.",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 1,
+      "dislikes": 1
     },
     {
       "id": 8,
@@ -69,7 +71,7 @@
       "name": "Bicycle Crunches",
       "image": "/exercisesimages/bicycle-crunches.jpg",
       "description": "Bicycle Crunches are an effective core exercise that targets the oblique muscles. When performing bicycle crunches, you lie on your back, bring your knees up, and twist your upper body to touch your elbows to your knees in a pedaling motion. This exercise is great for building oblique strength and toning the abdominal muscles.",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 0
     },
     {
@@ -78,7 +80,7 @@
       "image": "/exercisesimages/hitt.jpg",
       "description": "High-Intensity Interval Training to improve fitness and burn fat.",
       "likes": 1,
-      "dislikes": 0
+      "dislikes": 1
     },
     {
       "id": 11,
@@ -207,7 +209,24 @@
       "description": "Rowing is an excellent full-body workout that targets multiple muscle groups. It is a cardiovascular exercise that involves the use of a rowing machine or a boat on water. The primary muscle groups worked during rowing include the legs, back, and arms.",
       "likes": 0,
       "dislikes": 0
+    },
+    {
+      "name": "Test",
+      "image": "Test",
+      "description": "Test",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 27
     }
   ],
-  "comments":[]
+  "comments": [
+    {
+      "text": "Welcome everyone to our website.",
+      "id": 1
+    },
+    {
+      "text": "Please a review for us.",
+      "id": 2
+    }
+  ]
 }
