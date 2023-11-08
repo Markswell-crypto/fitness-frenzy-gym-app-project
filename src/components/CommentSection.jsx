@@ -72,7 +72,7 @@ function CommentSection() {
         </Form.Group>
         <br></br>
         <Button variant="primary" onClick={handleAddComment}>
-          Add Comment
+          Add comment here 
         </Button>
       </Form>
       <br></br>
