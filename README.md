@@ -67,7 +67,5 @@ slides link: https://docs.google.com/presentation/d/1wStg4JikeQCL0HOW4vtcJ78TuIJ
 
 
 
-
-
 We encourage you to join our growing community and embark on your fitness journey with Fitness Frenzy!
 
