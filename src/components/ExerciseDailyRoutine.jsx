@@ -1,56 +1,80 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 
-function ExerciseDailyRoutine({ exercises }) {
-    const [dailyRoutine, setDailyRoutine] = useState([]);  //state to manage the daily exercise routine
-    
-    // function to add an exercise to the daily routine
-    const handleAddToRoutine = (exercise) => {
-        // creating a copy of current dailyroutine & add selected exercise with default sets and repetitions
-        const updatedRoutine = [...dailyRoutine, {exercise, set: 0, repetitions: 0 }];
-        setDailyRoutine(updatedRoutine);
-    };
+const ExerciseDailyRoutine = () => {
+  const [exercises, setExercises] = useState([]);
+  const [selectedExercise, setSelectedExercise] = useState(null);
+  const [routine, setRoutine] = useState([]);
 
-    // function to handle changes in sets and repetitions for a specific exercise in the daily routine
-    const handleSetsRepetitionsChange = (index, field, value) => {
-        // creating a copy of the current dailyroutine and update sets or repetitions value for selected exercise
-        const updatedRoutine = [...dailyRoutine];
-        updatedRoutine[index][field] = value;
-        setDailyRoutine(updatedRoutine);
-    };
+  // Fetch exercise data
+  useEffect(() => {
+    fetch('http://localhost:3000/exercises')
+      .then((response) => response.json())
+      .then((data) => {
+        setExercises(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching exercises:', error);
+      });
+  }, []);
 
-    return (
-        <div>
-            <h2>Daily Routine</h2>
-            {exercises.map((exercise, index) => (
-                <div key={exercise.id}>
-                    <h3>{exercise.name}</h3>
-                    {/* button to add exercise to daily routine */}
-                    <button onClick={() => handleAddToRoutine(exercise)}>Add to Routine</button>
-                    {dailyRoutine.map((item, itemIndex) => {
-                        if (item.exercise.id === exercise.id) {
-                            return(
-                                <div key={itemIndex}>
-                                    <label>Sets:</label>
-                                    <input 
-                                      type="number"
-                                      value={item.set}
-                                      onChange={(e) => handleSetsRepetitionsChange(itemIndex, 'set', e.target.value)}
-                                      />
-                                    <label>Repetitions:</label>
-                                    <input
-                                      type="number"
-                                      value={item.repetitions}
-                                      onChange={(e) => handleSetsRepetitionsChange(itemIndex, 'repetitions', e.target.value)}
-                                      />  
-                                </div>
-                            );
-                        }
-                        return null;
-                    })}
-                </div>
-            ))}
+  // Function to handle exercise selection
+  const handleExerciseSelect = (event) => {
+    const selectedExerciseId = parseInt(event.target.value);
+    const exerciseToAdd = exercises.find((exercise) => exercise.id === selectedExerciseId);
+    if (exerciseToAdd) {
+      setRoutine([...routine, exerciseToAdd]);
+    }
+  };
+
+  const handleRemoveExercise = (exerciseId) => {
+    const updatedRoutine = routine.filter((exercise) => exercise.id !== exerciseId);
+    setRoutine(updatedRoutine);
+  };
+
+  return (
+    <div className="container mt-5" style={{ width: "70%" }}>
+      <h2 className="text-warning">Daily Routine</h2>
+      <div className="row">
+        <div className="col-md-6">
+          <div className="form-group">
+            <label htmlFor="exerciseSelect" style={{ color: 'green', fontSize: '20px' }}>Select an Exercise</label>
+            <select
+              id="exerciseSelect"
+              className="form-control"
+              onChange={handleExerciseSelect}
+              style={{ width: '50%' }}
+            >
+              <option value="">Select an exercise</option>
+              {exercises.map((exercise) => (
+                <option key={exercise.id} value={exercise.id}>
+                  {exercise.name}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
-    );
-}
+        <div className="col-md-6">
+          <br></br>
+          <h3 className="text-primary">Selected Exercises</h3>
+          <ul className="list-group" style={{ width: '70%' }}>
+            {routine.map((exercise) => (
+              <li key={exercise.id} className="list-group-item">
+                <div className="d-flex justify-content-between align-items-center">
+                  {exercise.name}
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={() => handleRemoveExercise(exercise.id)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default ExerciseDailyRoutine;
