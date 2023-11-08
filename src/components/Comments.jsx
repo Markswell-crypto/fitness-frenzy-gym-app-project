@@ -52,14 +52,13 @@ const Comment = ({
               placeholder="type..."
             />
             <div>
-            <Action
-              className="reply-comment"
-              type="COMMENT"
-              handleClick={onAddComment}
-            />
+              <Action
+                className="reply-comment"
+                type="COMMENT"
+                handleClick={onAddComment}
+              />
             </div>
           </>
-          
         ) : (
           <>
             <span
@@ -120,7 +119,6 @@ const Comment = ({
             <input
               type="text"
               className="inputContainer__input"
-             
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="type..."
