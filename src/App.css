@@ -104,4 +104,6 @@ font-size:larger;
 
    
   }
-  
+  .search-button:hover {
+    background-color: #0069d9;
+  }
