@@ -5,7 +5,7 @@ import "./index.css";
 
 const comments = {
   id: 1,
-  items: [],
+  items: [],  
 };
 const ReviewPage = () => {
   const [commentsData, setCommentsData] = useState(comments);

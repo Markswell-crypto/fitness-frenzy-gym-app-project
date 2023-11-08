@@ -105,7 +105,7 @@ border-radius: 10px;
   padding: 10px;
   background-color: #e94040;
   border-radius: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .replyCancel {
@@ -121,10 +121,10 @@ border-radius: 10px;
 
 
 .replyButton:hover {
-  background-color: #000cb3; 
+  background-color:#0056b3
 }
 .replyEdit:hover {
-  background-color: #0056b3; 
+  background-color: #2ab300; 
 }
 .replyDelete:hover {
   background-color: #0056b3;
