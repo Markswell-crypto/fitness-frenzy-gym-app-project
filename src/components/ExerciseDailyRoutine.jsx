@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 
 const ExerciseDailyRoutine = () => {
   const [exercises, setExercises] = useState([]);
@@ -30,6 +30,7 @@ const ExerciseDailyRoutine = () => {
     const updatedRoutine = routine.filter((exercise) => exercise.id !== exerciseId);
     setRoutine(updatedRoutine);
   };
+  
 
   return (
     <div className="container mt-5" style={{ width: "70%" }}>
