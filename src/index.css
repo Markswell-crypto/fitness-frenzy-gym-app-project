@@ -10,6 +10,10 @@
   margin-top: 20px;
 }
 
+.commentContainer:hover {
+  border-color: #007bff;
+}
+
 .first_input {
   background-color: #e0e0e0;
   border: 1px solid #999;
@@ -27,6 +31,11 @@
   border:1px solid#0c0000;
   border-radius: 5px;
   padding: 5px;
+}
+
+.reply-comment:hover {
+  border-color: #767e06;
+  color: #2121e7;
 }
 
 .commentActions {
@@ -108,4 +117,26 @@ border-radius: 10px;
 
 .inputContainer__input {
   border-radius: 5px;
+}
+
+
+.replyButton:hover {
+  background-color: #000cb3; 
+}
+.replyEdit:hover {
+  background-color: #0056b3; 
+}
+.replyDelete:hover {
+  background-color: #0056b3;
+}
+
+.reply:hover {
+  background-color: #f5f2f2; 
+}
+.replyCancel:hover {
+  background-color: #faf4f4;
+} 
+
+.inputContainer__input:hover {
+  border: 1px solid #00b7ff;
 }
