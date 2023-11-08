@@ -5,8 +5,9 @@ import './App.css';
 
 function App() {
   const handleSearch = (searchTerm) => {
-    console.log(`Searching for: ${searchTerm}`);
+    console.log('search item is clicked:', searchTerm);
   };
+  
 
   return (
     <div className="App">
