@@ -75,7 +75,7 @@ function CommentSection() {
           Add comment here 
         </Button>
       </Form>
-      <br></br>
+      <br></br><br></br>
       <ListGroup>
         {comments.map((comment) => (
           <ListGroup.Item key={comment.id} style={{ marginBottom: '10px' }}>
