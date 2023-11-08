@@ -1,4 +1,4 @@
-## Fitness Frenzy Gym App
+## FITNESS FRENZY GYM APP
 
 ### Introduction
 
@@ -60,6 +60,14 @@ Joyce: https://github.com/JOYCEmwangi8880
 Gerald: https://github.com/Gerald-GG
 
 Neville: https://github.com/Neville777
+
+
+## Below are the slides of some of our work :
+slides link: https://docs.google.com/presentation/d/1wStg4JikeQCL0HOW4vtcJ78TuIJLf8RbwaZA8cS4nxA/edit?usp=sharing
+
+
+
+
 
 We encourage you to join our growing community and embark on your fitness journey with Fitness Frenzy!
 
