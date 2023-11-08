@@ -39,7 +39,7 @@ const Comment = ({
   };
 
   return (
-    <div>
+    <span>
       <div className={comment.id === 1 ? "inputContainer" : "commentContainer"}>
         {comment.id === 1 ? (
           <>
@@ -151,7 +151,7 @@ const Comment = ({
           ))
         )}
       </div>
-    </div>
+    </span>
   );
 };
 
