@@ -4,6 +4,8 @@ import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
 import ExerciseDisplay from './components/ExerciseDisplay';
 import ExerciseDetails from './components/ExerciseDetails'; 
+import ExerciseDailyRoutine from './components/ExerciseDailyRoutine';
+// import ReviewPage from './components/ReviewPage'
 
 function App() {
   const handleSearch = (searchTerm) => {
@@ -21,6 +23,8 @@ function App() {
           <Routes>
             <Route path="/" exact element={<ExerciseDisplay/>} />
             <Route path="/exercise-details/:id" element={<ExerciseDetails />} />
+            <Route path="/exercises_routine" element={<ExerciseDailyRoutine />} />
+            {/* <Route path="/comments" element={<ReviewPage />} /> */}
           </Routes>
         </Router>
       </div>

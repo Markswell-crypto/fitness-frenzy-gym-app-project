@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ExerciseDailyRoutine({ exercises }) {
-    const [dailyRoutine, setDailyRoutine] = useState([]);  //state to manage the daily exercise routine
+    const [dailyRoutine, setDailyRoutine] = useState([]);  
     
     // function to add an exercise to the daily routine
     const handleAddToRoutine = (exercise) => {

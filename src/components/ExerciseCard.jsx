@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ExerciseCard = ({ exercise, onLike, onDislike }) => {
   const [likes, setLikes] = useState(exercise.likes);
-  const [dislike, setDislikes] = useState(exercise.dislikes);
+  const [dislikes, setDislikes] = useState(exercise.dislikes);
 
   const handleLike = () => {
     setLikes((prevLikes) => prevLikes + 1); 
@@ -32,7 +32,7 @@ const ExerciseCard = ({ exercise, onLike, onDislike }) => {
             <span role="img" aria-label="Like">👍 </span> {likes}
           </button>
           <button className="btn btn-danger me-2" onClick={handleDislike}>
-            <span role="img" aria-label="Dislike">👎 </span> {dislike}        
+            <span role="img" aria-label="Dislike">👎 </span> {dislikes}        
           </button>
         </div>
         <div className='container'>
