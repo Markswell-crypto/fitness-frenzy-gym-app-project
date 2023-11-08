@@ -1,8 +1,9 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import SearchBar from './components/SearchBar';
-import './App.css';
 import ExerciseDisplay from './components/ExerciseDisplay';
+import ExerciseDetails from './components/ExerciseDetails'; 
 
 function App() {
   const handleSearch = (searchTerm) => {
@@ -11,22 +12,21 @@ function App() {
 
   return (
     <div className="Container">
- <NavBar />
-    <div className="App">
- <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
-   <div className="Container">
-    <br></br>
-    <div className='container'>
-      <NavBar />
-      <SearchBar onSearch={handleSearch} /> 
-    </div>
-      <br></br>
-      <div className='container'>
-       <ExerciseDisplay /> 
+      <div className="App">
+        <h1 className="text-warning">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</h1>
+        <br></br>
+        <Router>
+          <NavBar />
+          <SearchBar onSearch={handleSearch} />
+          <Routes>
+            <Route path="/" exact element={<ExerciseDisplay/>} />
+            <Route path="/exercise-details/:id" element={<ExerciseDetails />} />
+          </Routes>
+        </Router>
       </div>
-      
-  </div>
+    </div>
   );
 }
 
 export default App;
+

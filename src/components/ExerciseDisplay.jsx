@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from 'react';
 import ExerciseCard from './ExerciseCard';
 
@@ -23,20 +25,20 @@ const ExerciseDisplay = () => {
   }, []);
 
   // Function to handle liking an exercise and updating it on the server
-  const handleLike = (exerciseId, updatedLikes) => {
+  const handleLike = (exerciseId, updatedLike) => {
     // Use a normal fetch without async
     fetch(`http://localhost:3000/exercises/${exerciseId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ likes: updatedLikes }),
+      body: JSON.stringify({ likes: updatedLike }),
     })
       .then((response) => {
         if (response.ok) {
           const updatedExercise = exercises.map((exercise) => {
             if (exercise.id === exerciseId) {
-              return { ...exercise, likes: updatedLikes };
+              return { ...exercise, like: updatedLike };
             }
             return exercise;
           });
@@ -51,20 +53,20 @@ const ExerciseDisplay = () => {
   };
 
   // Function to handle disliking an exercise and updating it on the server
-  const handleDislike = (exerciseId, updatedDislikes) => {
+  const handleDislike = (exerciseId, updatedDislike) => {
     // Use a normal fetch without async
     fetch(`http://localhost:3000/exercises/${exerciseId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ dislikes: updatedDislikes }),
+      body: JSON.stringify({ dislike: updatedDislike }),
     })
       .then((response) => {
         if (response.ok) {
           const updatedExercise = exercises.map((exercise) => {
             if (exercise.id === exerciseId) {
-              return { ...exercise, dislikes: updatedDislikes };
+              return { ...exercise, dislike: updatedDislike };
             }
             return exercise;
           });
@@ -80,7 +82,7 @@ const ExerciseDisplay = () => {
 
   // Render the list of exercises using ExerciseCard components
   return (
-    <div className="exercise-display container">
+    <div className="exercise-display container mt-5">
         <div className='row'>
       {exercises.map((exercise) => (
         <ExerciseCard
@@ -96,3 +98,6 @@ const ExerciseDisplay = () => {
 };
 
 export default ExerciseDisplay;
+
+
+
