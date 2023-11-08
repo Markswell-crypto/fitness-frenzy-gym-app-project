@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
-function ExerciseDetails({ likes, dislikes }) {
+function ExerciseDetails() {
   const { id } = useParams();
   const [exercise, setExercise] = useState(null);
 
@@ -21,8 +21,8 @@ function ExerciseDetails({ likes, dislikes }) {
   return (
     <div className='container h-100 mt-5 mb-5'>
     <div className="row h-100 justify-content-center align-items-center">
-      <div className="card bg-light" style={{ width: '40%' }}>
-        <img src={exercise.image} alt={exercise.name} className="card-img-top" style={{ height: '300px', objectFit: 'cover' }} />
+      <div className="card bg-light" style={{ width: '50%' }}>
+        <img src={exercise.image} alt={exercise.name} className="card-img-top" style={{ height: '400px', objectFit: 'cover' }} />
         <div className="card-body">
           <h5 className="card-title">{exercise.name}</h5>
           <p className="mt-2 mb-0">{exercise.description}</p>
