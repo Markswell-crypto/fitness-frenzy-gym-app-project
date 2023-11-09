@@ -10,7 +10,7 @@ const ExerciseDisplay = ({ searchTerm }) => {
 
   // Function to fetch exercises from the server
   const fetchExercises = () => {
-    fetch('/.netlify/functions/api/exercises')
+    fetch('http://localhost:3000/exercises')
       .then((response) => response.json())
       .then((data) => {
         setExercises(data);
@@ -37,7 +37,7 @@ const ExerciseDisplay = ({ searchTerm }) => {
   }, [searchTerm, exercises]);
 
   const handleLike = (exerciseId, updatedLike) => {
-    fetch(`/.netlify/functions/api/exercises/${exerciseId}`, {
+    fetch(`http://localhost:3000/exercises/${exerciseId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const ExerciseDisplay = ({ searchTerm }) => {
   };
 
   const handleDislike = (exerciseId, updatedDislike) => {
-    fetch(`/.netlify/functions/api/exercises/${exerciseId}`, {
+    fetch(`http://localhost:3000/exercises/${exerciseId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

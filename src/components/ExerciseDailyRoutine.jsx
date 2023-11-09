@@ -7,7 +7,7 @@ const ExerciseDailyRoutine = () => {
 
   // Fetch exercise data
   useEffect(() => {
-    fetch('/.netlify/functions/api/exercises')
+    fetch('http://localhost:3000/exercises')
       .then((response) => response.json())
       .then((data) => {
         setExercises(data);

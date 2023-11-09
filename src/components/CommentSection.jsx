@@ -8,13 +8,13 @@ function CommentSection() {
 
   // Load comments from the server
   useEffect(() => {
-    fetch('/.netlify/functions/api/comments')
+    fetch('http://localhost:3000/comments')
       .then((response) => response.json())
       .then((data) => setComments(data));
   }, []);
 
   const handleAddComment = () => {
-    fetch('/.netlify/functions/api/comments', {
+    fetch('http://localhost:3000/comments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ function CommentSection() {
   };
 
   const handleSaveComment = (commentId, updatedText) => {
-    fetch(`/.netlify/functions/api/comments/${commentId}`, {
+    fetch(`http://localhost:3000/comments/${commentId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function CommentSection() {
   };
 
   const handleDeleteComment = (commentId) => {
-    fetch(`/.netlify/functions/api/comments/${commentId}`, {
+    fetch(`http://localhost:3000/comments/${commentId}`, {
       method: 'DELETE',
     }).then(() => {
       const updatedComments = comments.filter((comment) => comment.id !== commentId);
