@@ -110,4 +110,4 @@ Thank you for your dedication and efforts, which have played a significant role 
 
 ## This is our Deployed Website from the main branch
 
-<a href="https://aesthetic-chaja-a8067c.netlify.app/">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</a> 
+<a href="https://fitness-frenzy-gym-app.netlify.app">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</a> 
