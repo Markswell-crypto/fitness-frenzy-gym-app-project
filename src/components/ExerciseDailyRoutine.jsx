@@ -61,12 +61,12 @@ const ExerciseDailyRoutine = () => {
           <div className="row">
             {routine.map((exercise) => (
               <div key={exercise.id} className="col-md-4 mb-4">
-                <div className="card" style={{ width: '100px' }}>
+                <div className="card" style={{ width: '100%' }}>
                   <img
                     src={exercise.image}
                     alt={exercise.name}
                     className="card-img-top"
-                    style={{ height: '160px', objectFit: 'cover' }}
+                    style={{ height: '180px', objectFit: 'cover' }}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{exercise.name}</h5>
