@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 
 const ExerciseDailyRoutine = () => {
   const [exercises, setExercises] = useState([]);
@@ -30,7 +30,6 @@ const ExerciseDailyRoutine = () => {
     const updatedRoutine = routine.filter((exercise) => exercise.id !== exerciseId);
     setRoutine(updatedRoutine);
   };
-  
 
   return (
     <div className="container mt-5" style={{ width: "70%" }}>
@@ -38,7 +37,9 @@ const ExerciseDailyRoutine = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="form-group">
-            <label htmlFor="exerciseSelect" style={{ color: 'green', fontSize: '20px' }}>Select an Exercise</label>
+            <label htmlFor="exerciseSelect" style={{ color: 'green', fontSize: '20px' }}>
+              Select an Exercise
+            </label>
             <select
               id="exerciseSelect"
               className="form-control"
@@ -57,21 +58,29 @@ const ExerciseDailyRoutine = () => {
         <div className="col-md-6">
           <br></br>
           <h3 className="text-primary">Selected Exercises</h3>
-          <ul className="list-group" style={{ width: '70%' }}>
+          <div className="row">
             {routine.map((exercise) => (
-              <li key={exercise.id} className="list-group-item">
-                <div className="d-flex justify-content-between align-items-center">
-                  {exercise.name}
-                  <button
-                    className="btn btn-danger btn-sm"
-                    onClick={() => handleRemoveExercise(exercise.id)}
-                  >
-                    Remove
-                  </button>
+              <div key={exercise.id} className="col-md-4 mb-4">
+                <div className="card" style={{ width: '100px' }}>
+                  <img
+                    src={exercise.image}
+                    alt={exercise.name}
+                    className="card-img-top"
+                    style={{ height: '160px', objectFit: 'cover' }}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{exercise.name}</h5>
+                    <button
+                      className="btn btn-danger btn-sm"
+                      onClick={() => handleRemoveExercise(exercise.id)}
+                    >
+                      Remove
+                    </button>
+                  </div>
                 </div>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
