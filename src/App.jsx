@@ -6,7 +6,7 @@ import ExerciseDisplay from './components/ExerciseDisplay';
 import ExerciseDetails from './components/ExerciseDetails';
 import ExerciseDailyRoutine from './components/ExerciseDailyRoutine';
 import AddExercise from './components/AddExercise';
-import CommentSection from './components/CommentsSection';
+import CommentSection from './components/CommentSection';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
