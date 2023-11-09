@@ -8,7 +8,7 @@ function ExerciseDetails() {
 
   useEffect(() => {
     // Fetch exercise details using the ID
-    fetch(`http://localhost:3000/exercises/${id}`)
+    fetch(`/.netlify/functions/api/exercises/${id}`)
       .then((response) => response.json())
       .then((data) => setExercise(data))
       .catch((error) => console.error('Error fetching Exercise details:', error));
