@@ -32,40 +32,82 @@ Our app offers a host of features that make it an invaluable tool for anyone see
 
 Fitness Frenzy is the brainchild of a passionate team of developers, committed to creating a user-friendly and effective fitness platform. Our team is dedicated to providing a seamless and enjoyable experience for our users, empowering them to achieve their fitness goals with confidence.
 
-**Markswell Ogutu:** 
+**Markswell Ogutu** 
 
-**Joyce Mwangi:** 
+**Joyce Mwangi** 
 
-**Gerald Gichuru:** 
+**Gerald Gichuru** 
 
-**Neville James:** 
+**Neville James** 
 
+
+### Developers GitHub Accounts
+
+<a href="https://github.com/Markswell-crypto">Full-stack Developer Markswell</a>
+
+<a href="https://github.com/JOYCEmwangi8880">Full-stack Developer Joyce</a>
+
+<a href="https://github.com/Gerald-GG">Full-stack Developer Gerald</a>
+
+<a href="https://github.com/Neville777">Full-stack Developer Neville</a>
+
+
+# Contributing
+
+We welcome contributions from the community! If you'd like to contribute to this project, please follow these guidelines:
+
+## Getting Started
+
+1. Fork the repository.
+2. Clone the forked repository to your local machine.
+3. Create a new branch for your feature or bug fix.
+
+## Making Changes
+
+1. Make your changes in the new branch.
+2. Test your changes thoroughly.
+3. Ensure your code follows the project's coding standards.
+
+## Submitting Changes
+
+1. Commit your changes with a clear and concise commit message.
+2. Push your changes to your forked repository.
+3. Create a pull request to the main repository's branch.
+
+## Code of Conduct
+
+Please note that we have a Code of Conduct. By participating in this project, you agree to abide by its terms.
+
+## Need Help?
+
+If you have questions or encounter issues, feel free to open an issue or reach out to:
+
+- [Markswell] at [markswell.ogutu@student.moringaschool.com].
+- [Joyce] at [joyce.mwangi@student.moringaschool.com]
+- [Gerald] at [gerald.gicharu@student.moringaschool.com]
+- [Neville] at [neville.james@student.moringaschool.com]
+
+Thank you for contributing!
 
 ### License
 
 Fitness Frenzy is an open-source project, licensed under the MIT License. This means you can freely use, modify, and distribute the app, subject to the terms of the license.
 
-### Contact Us
+## Acknowledgements
 
-For any questions, feedback, or assistance, please contact us at:
+We would like to express our gratitude to the following individuals for their contributions, support, and collaboration on this project:
 
-Email: fitnessfrenzygym@gmail.com
+- [Markswell](https://github.com/Markswell-crypto)
+- [Joyce](https://github.com/JOYCEmwangi8880)
+- [Gerald](https://github.com/Gerald-GG)
+- [Neville](https://github.com/Neville777)
 
-### Developers GitHub Accounts
+Thank you for your dedication and efforts, which have played a significant role in the success of this project.
 
-Markswell: https://github.com/Markswell-crypto
+## Below are the slides of our work :
 
-Joyce: https://github.com/JOYCEmwangi8880
+<a href="https://docs.google.com/presentation/d/1wStg4JikeQCL0HOW4vtcJ78TuIJLf8RbwaZA8cS4nxA/edit?usp=sharing">Our Work</a>
 
-Gerald: https://github.com/Gerald-GG
+## This is our Deployed Website from the main branch
 
-Neville: https://github.com/Neville777
-
-
-## Below are the slides of some of our work :
-slides link: https://docs.google.com/presentation/d/1wStg4JikeQCL0HOW4vtcJ78TuIJLf8RbwaZA8cS4nxA/edit?usp=sharing
-
-
-
-We encourage you to join our growing community and embark on your fitness journey with Fitness Frenzy!
-
+<a href="https://aesthetic-chaja-a8067c.netlify.app/">FITNESS FRENZY GYM 💪🏋️🏋️‍♀️ 🤼‍♂️</a> 
